@@ -1,0 +1,102 @@
+/* index.css */
+
+/* Import external CSS files */
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Theme settings for font and colors */
+  .theme {
+    --font-heading: var(--font-sans);
+    --font-sans: 'Geist Variable', sans-serif;
+  }
+
+  /* Root custom properties (CSS variables) */
+  :root {
+    --background: oklch(1 0 0); /* Background color */
+    --foreground: oklch(0.145 0 0); /* Foreground color */
+    --card: oklch(1 0 0); /* Card color */
+    --card-foreground: oklch(0.145 0 0); /* Card foreground color */
+    --popover: oklch(1 0 0); /* Popover background */
+    --popover-foreground: oklch(0.145 0 0); /* Popover foreground */
+    --primary: oklch(0.205 0 0); /* Primary color */
+    --primary-foreground: oklch(0.985 0 0); /* Primary foreground color */
+    --secondary: oklch(0.97 0 0); /* Secondary color */
+    --secondary-foreground: oklch(0.205 0 0); /* Secondary foreground */
+    --muted: oklch(0.97 0 0); /* Muted color */
+    --muted-foreground: oklch(0.556 0 0); /* Muted foreground */
+    --accent: oklch(0.97 0 0); /* Accent color */
+    --accent-foreground: oklch(0.205 0 0); /* Accent foreground */
+    --destructive: oklch(0.577 0.245 27.325); /* Destructive color */
+    --border: oklch(0.922 0 0); /* Border color */
+    --input: oklch(0.922 0 0); /* Input background */
+    --ring: oklch(0.708 0 0); /* Ring color */
+    --chart-1: oklch(0.87 0 0); /* Chart color 1 */
+    --chart-2: oklch(0.556 0 0); /* Chart color 2 */
+    --chart-3: oklch(0.439 0 0); /* Chart color 3 */
+    --chart-4: oklch(0.371 0 0); /* Chart color 4 */
+    --chart-5: oklch(0.269 0 0); /* Chart color 5 */
+    --radius: 0.625rem; /* Border radius */
+    --sidebar: oklch(0.985 0 0); /* Sidebar background */
+    --sidebar-foreground: oklch(0.145 0 0); /* Sidebar foreground */
+    --sidebar-primary: oklch(0.205 0 0); /* Sidebar primary color */
+    --sidebar-primary-foreground: oklch(0.985 0 0); /* Sidebar primary foreground */
+    --sidebar-accent: oklch(0.97 0 0); /* Sidebar accent */
+    --sidebar-accent-foreground: oklch(0.205 0 0); /* Sidebar accent foreground */
+    --sidebar-border: oklch(0.922 0 0); /* Sidebar border */
+    --sidebar-ring: oklch(0.708 0 0); /* Sidebar ring */
+  }
+
+  /* Dark mode custom properties */
+  .dark {
+    --background: oklch(0.145 0 0); /* Dark background */
+    --foreground: oklch(0.985 0 0); /* Dark foreground */
+    --card: oklch(0.205 0 0); /* Dark card */
+    --card-foreground: oklch(0.985 0 0); /* Dark card foreground */
+    --popover: oklch(0.205 0 0); /* Dark popover */
+    --popover-foreground: oklch(0.985 0 0); /* Dark popover foreground */
+    --primary: oklch(0.922 0 0); /* Dark primary */
+    --primary-foreground: oklch(0.205 0 0); /* Dark primary foreground */
+    --secondary: oklch(0.269 0 0); /* Dark secondary */
+    --secondary-foreground: oklch(0.985 0 0); /* Dark secondary foreground */
+    --muted: oklch(0.269 0 0); /* Dark muted */
+    --muted-foreground: oklch(0.708 0 0); /* Dark muted foreground */
+    --accent: oklch(0.269 0 0); /* Dark accent */
+    --accent-foreground: oklch(0.985 0 0); /* Dark accent foreground */
+    --destructive: oklch(0.704 0.191 22.216); /* Dark destructive */
+    --border: oklch(1 0 0 / 10%); /* Dark border */
+    --input: oklch(1 0 0 / 15%); /* Dark input */
+    --ring: oklch(0.556 0 0); /* Dark ring */
+    --chart-1: oklch(0.87 0 0); /* Dark chart color 1 */
+    --chart-2: oklch(0.556 0 0); /* Dark chart color 2 */
+    --chart-3: oklch(0.439 0 0); /* Dark chart color 3 */
+    --chart-4: oklch(0.371 0 0); /* Dark chart color 4 */
+    --chart-5: oklch(0.269 0 0); /* Dark chart color 5 */
+    --sidebar: oklch(0.205 0 0); /* Dark sidebar */
+    --sidebar-foreground: oklch(0.985 0 0); /* Dark sidebar foreground */
+    --sidebar-primary: oklch(0.488 0 0); /* Dark sidebar primary */
+    --sidebar-primary-foreground: oklch(0.985 0 0); /* Dark sidebar primary foreground */
+    --sidebar-accent: oklch(0.269 0 0); /* Dark sidebar accent */
+    --sidebar-accent-foreground: oklch(0.985 0 0); /* Dark sidebar accent foreground */
+    --sidebar-border: oklch(1 0 0 / 10%); /* Dark sidebar border */
+    --sidebar-ring: oklch(0.556 0 0); /* Dark sidebar ring */
+  }
+
+  /* Global styling */
+  
+
+  body {
+    background-color: var(--background); /* Apply background using CSS variable */
+    color: var(--foreground); /* Apply foreground color */
+  }
+
+  html {
+    @apply font-sans; /* Apply font */
+  }
+}
